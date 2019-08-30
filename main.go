@@ -5,8 +5,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/esadeli/golang-native-docker/controllers/health"
-	"github.com/esadeli/golang-native-docker/controllers/user"
+	health "github.com/esadeli/golang-native-docker/controllers/health"
+	user "github.com/esadeli/golang-native-docker/controllers/user"
 )
 
 func main() {

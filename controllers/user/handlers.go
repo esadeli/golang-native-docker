@@ -2,8 +2,9 @@ package user
 
 import (
 	"encoding/json"
-	errormessage "golang-native-mongo/controllers/utils/errormessage"
 	"net/http"
+
+	errormessage "github.com/esadeli/golang-native-docker/controllers/utils/errormessage"
 )
 
 // GetUserData function to get user data
