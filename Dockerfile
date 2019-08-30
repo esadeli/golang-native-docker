@@ -2,12 +2,12 @@ FROM golang:latest
 
 LABEL maintainer = "efrat.sadeli@gmail.com"
 
-WORKDIR /
+WORKDIR /go/src/github.com/esadeli/golang-native-docker
 
 COPY . .
 
-RUN go get -v ./...
-
+RUN go get -u github.com/golang/dep/cmd/dep
+RUN /go/bin/dep ensure
 RUN go build -o main .
 
 EXPOSE 5051
