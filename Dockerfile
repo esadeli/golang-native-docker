@@ -6,6 +6,8 @@ WORKDIR /
 
 COPY . .
 
+RUN go build -o main .
+
 EXPOSE 5051
 
 CMD ["./main.go"]
